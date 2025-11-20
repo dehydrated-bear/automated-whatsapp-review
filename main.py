@@ -1,11 +1,21 @@
 from fastapi import FastAPI, Form
 from fastapi.responses import Response
+from fastapi.middleware.cors import CORSMiddleware
 from conversation import process_message
 from db import SessionLocal, Base, engine
 from models import Review
 from sqlalchemy import inspect
 
 app = FastAPI()
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], 
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # this creates tables reviews if it does not exists in the db
 inspector = inspect(engine)

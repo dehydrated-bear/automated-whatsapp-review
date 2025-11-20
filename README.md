@@ -103,16 +103,9 @@ python main.py
 
 ## 🚢 Deployment
 
-### Using Uvicorn Directly
-```bash
-uvicorn main:app --host 0.0.0.0 --port 8000
-```
-
-### Using Gunicorn (Production)
-```bash
-pip install gunicorn
-gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
-```
+## hosted on render at 
+ https://automated-whatsapp-review.onrender.com/  - server status
+ https://automated-whatsapp-review.onrender.com/api/reviews - returns the list of all the reviews
 
 ## 🔐 CORS Configuration
 
@@ -167,26 +160,8 @@ netstat -ano | findstr :8000
 taskkill /PID <PID> /F
 ```
 
-### Import Errors
-```bash
-# Verify virtual environment is activated
-which python  # Should show venv path
-
-# Reinstall packages
-pip install -r requirements.txt
 ```
 
-### Database Errors
-```bash
-# Reset database
-rm reviews.db
-python main.py
-```
 
-## 📖 Full Documentation
 
-See the main [README.md](../README.md) for comprehensive documentation.
-
----
-
-**Version:** 1.0.0 | **Last Updated:** November 20, 2025
+| **Last Updated:** November 20, 2025

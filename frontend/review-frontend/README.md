@@ -49,15 +49,7 @@ review-frontend/
 └── public/                 # Public assets
 ```
 
-## 🎨 Features
 
-- **Dark Modern Theme** - Elegant dark gradient background
-- **Glassmorphic Design** - Frosted glass effect on cards
-- **Smooth Animations** - Hover effects and transitions
-- **Responsive Layout** - Works on all screen sizes
-- **Loading States** - Spinner while fetching data
-- **Error Handling** - Clear error messages
-- **Date Formatting** - Human-readable timestamps
 
 ## 🔧 Configuration
 
@@ -143,24 +135,6 @@ Main component that:
 - `.review-item` - Individual review card
 - `.state-message` - Loading/error/empty states
 
-## 🌐 Deployment
-
-### Vercel
-```bash
-# Install Vercel CLI
-npm install -g vercel
-
-# Deploy
-vercel
-```
-
-### Netlify
-```bash
-# Build
-npm run build
-
-# Deploy dist/ folder to Netlify
-```
 
 ### Environment Variables
 Create `.env` file:
